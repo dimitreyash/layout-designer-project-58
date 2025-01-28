@@ -108,11 +108,11 @@ h3 {
 
 .top-description {
   position: relative;
+  margin-bottom: 200px;
 }
 
 .bottom-description {
   display: flex;
-  margin-top: 200px;
   gap: 30px;
 }
 
@@ -200,12 +200,15 @@ background-color: var(--color-primary-dark);
 }
 
 .card {
+  display: block;
+  text-decoration: none;
   padding: 24px;
   background-color: var(--color-light);
 }
 
 .card p {
   margin: 0;
+  color: var(--color-dark);
 }
 
 .card h2 {
@@ -215,6 +218,7 @@ background-color: var(--color-primary-dark);
   font-weight: 400;
   line-height: 1;
   margin-bottom: 40px;
+  color: var(--color-primary-dark);
 }
 
 .card h3 {
@@ -224,6 +228,65 @@ background-color: var(--color-primary-dark);
   margin-bottom: 16px;
 }
 
-
-
 /* End Navigation */
+
+/* Start Ikea effect */
+.ikea-effect {
+  background-color: var(--color-light);
+}
+
+.ikea-effect h4 {
+  color: var(--color-dark-translucent);
+  font-family: Neucha;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.ikea-effect span {
+  font-family: Neucha;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-dark);
+  margin: 0;
+}
+
+.reused-paragraph {
+  font-family: Neucha;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-dark);
+  margin: 0;
+  margin-top: 30px;
+}
+
+.ikea-effect h5 {
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.title-line-beige {
+  background-color: var(--color-brown);
+  padding: 5px 954px 5px 10px;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.reused-flex{
+  display: flex;
+  gap: 30px;
+}
+
+.reused-image-right {
+  vertical-align: middle;
+}
+
+/* End Ikea effect */
+
