@@ -1,7 +1,147 @@
 /** CSS STYLE **/
+:root {
+  --color-white: #fff;
+  --color-white-translucent: #d7ccc0;
+  --color-light: #f5f4f0;
+  --color-primary: #fe8a02;
+  --color-primary-dark: #42413c;
+  --color-dark: #2a2626;
+  --color-dark-translucent: #908d8b;
 
-.hello {
-  display: block;
-
-  color: #fff;
+  --color-brown: #b09a81;
+  --color-blue: #1085c5;
 }
+
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  line-height: 1.6em;
+  font-size: 16px;
+  font-family: "Open Sans", serif;
+  margin: 0;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+  padding: 100px 0;
+  position: relative;
+}
+
+.background-pattern {
+  position: relative;
+}
+
+.background-pattern > * {
+  z-index: 1;
+  position: relative;
+}
+
+.background-pattern::before {
+  content: "";
+  position: absolute;
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.06;
+  z-index: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+/* Start Header */
+
+.main-header {
+  background-color: var(--color-light);
+}
+
+.main-header h1 {
+  color: var(--color-dark);
+  margin: 0;
+  font-family: Neucha;
+  font-weight: 400;
+}
+
+.main-image {
+  position: absolute;
+  right: -270px;
+  height: 525px;
+}
+
+.orange-text {
+  color: var(--color-primary);
+}
+
+.main-header p {
+  color: var(--color-dark);
+  margin: 0;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.main-image {
+  position: absolute;
+  height: 525px;
+  top: 55px;
+  right: -270px;
+  z-index: 0;
+}
+
+.top-description {
+  position: relative;
+}
+
+.bottom-description {
+  display: flex;
+  margin-top: 200px;
+  gap: 30px;
+}
+
+.left-description {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+}
+
+.right-description {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+}
+
+.right-description .description-paragraph {
+  margin-top: 10px;
+}
+
+.header-btn {
+  padding: 12px 24px;
+  background-color: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+/* End Header */
