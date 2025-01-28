@@ -146,6 +146,10 @@ h3 {
 /* End Header */
 
 /* Start Preview image */
+.preview-image {
+  height: 775px;
+}
+
 .preview-image h2 {
   margin: 0;
   font-family: Neucha;
@@ -171,3 +175,55 @@ iframe {
 }
 
 /* End Preview image */
+
+
+/* Start Navigation */
+
+.navigation {
+background-color: var(--color-primary-dark);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: 323px 348px;
+  gap: 20px;
+  padding-top: 100px;
+}
+
+.card-description h2 {
+  margin: 0;
+  font-family: Neucha;
+  font-size: 52px;
+  font-weight: 400;
+  color: var(--color-white);
+}
+
+.card {
+  padding: 24px;
+  background-color: var(--color-light);
+}
+
+.card p {
+  margin: 0;
+}
+
+.card h2 {
+  margin: 0;
+  font-family: Neucha;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+
+.card h3 {
+  margin: 0;
+  font-family: Neucha;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+
+
+/* End Navigation */
