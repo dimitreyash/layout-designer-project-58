@@ -143,6 +143,10 @@ h3 {
   margin-top: 40px;
 }
 
+.header-btn:hover {
+  background-color: #EA7600;
+}
+
 /* End Header */
 
 /* Start Preview image */
@@ -180,7 +184,7 @@ iframe {
 /* Start Navigation */
 
 .navigation {
-background-color: var(--color-primary-dark);
+  background-color: var(--color-primary-dark);
 }
 
 .cards {
@@ -206,9 +210,17 @@ background-color: var(--color-primary-dark);
   background-color: var(--color-light);
 }
 
+.card:hover {
+  background-color: var(--color-primary);
+}
+
 .card p {
   margin: 0;
   color: var(--color-dark);
+}
+
+.card:hover p {
+  color: var(--color-white);
 }
 
 .card h2 {
@@ -221,6 +233,10 @@ background-color: var(--color-primary-dark);
   color: var(--color-primary-dark);
 }
 
+.card:hover h2 {
+  color: var(--color-white);
+}
+
 .card h3 {
   margin: 0;
   font-family: Neucha;
@@ -228,14 +244,23 @@ background-color: var(--color-primary-dark);
   margin-bottom: 16px;
 }
 
+.card:hover h3 {
+  color: var(--color-white);
+}
+
 /* End Navigation */
 
-/* Start Ikea effect */
-.ikea-effect {
+/* Start section */
+
+.section {
   background-color: var(--color-light);
 }
 
-.ikea-effect h4 {
+.section-inverse {
+  background-color: var(--color-brown);
+}
+
+.section h4 {
   color: var(--color-dark-translucent);
   font-family: Neucha;
   font-size: 24px;
@@ -244,7 +269,11 @@ background-color: var(--color-primary-dark);
   margin: 0;
 }
 
-.ikea-effect span {
+.section-inverse h4 {
+  color: var(--color-white-translucent);
+}
+
+.section span {
   font-family: Neucha;
   font-size: 60px;
   font-weight: 400;
@@ -253,7 +282,11 @@ background-color: var(--color-primary-dark);
   margin: 0;
 }
 
-.reused-paragraph {
+.section-inverse span {
+  color: var(--color-white);
+}
+
+.section-paragraph {
   font-family: Neucha;
   font-size: 34px;
   font-weight: 400;
@@ -263,7 +296,11 @@ background-color: var(--color-primary-dark);
   margin-top: 30px;
 }
 
-.ikea-effect h5 {
+.section-inverse .section-paragraph {
+  color: var(--color-white);
+}
+
+.section h5 {
   color: var(--color-white);
   font-size: 14px;
   font-weight: 700;
@@ -272,21 +309,33 @@ background-color: var(--color-primary-dark);
   margin: 0;
 }
 
-.title-line-beige {
+.section-inverse h5 {
+  color: var(--color-brown);
+}
+
+.section-title-line {
   background-color: var(--color-brown);
   padding: 5px 954px 5px 10px;
   margin-bottom: 20px;
   margin-top: 100px;
 }
 
-.reused-flex{
+.section-inverse .section-title-line {
+  background-color: var(--color-white);
+}
+
+.section-flex {
   display: flex;
   gap: 30px;
 }
 
-.reused-image-right {
+.section-image-right {
   vertical-align: middle;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.15);
 }
 
-/* End Ikea effect */
+.section-inverse p {
+  color: var(--color-white);
+}
 
+/* End section */
