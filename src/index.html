@@ -58,7 +58,7 @@
       </div>
     </header>
     <main>
-      <section class="preview-image">
+      <section class="preview-image" id="preview-image">
         <div class="container">
           <h2>
             Что же это такое,<br /><span class="orange-text"
@@ -66,19 +66,16 @@
             >
           </h2>
           <p>Что такое когнитивные искажения. Petrovna Channel</p>
-          <iframe
-            width="919"
-            height="517"
-            src="https://www.youtube.com/embed/jie9AizBqss?si=YQWin1N9nrInFDlc"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <a href="#"
+            ><img
+              class="preview-video"
+              src="./images/preview.png"
+              alt="preview"
+          /></a>
         </div>
       </section>
 
-      <section class="navigation">
+      <section class="navigation" id="navigation">
         <div class="container">
           <div class="cards" id="cards">
             <div class="card-description">
@@ -91,7 +88,7 @@
             </div>
             <a href="#ikea-effect" class="card">
               <h2>1</h2>
-              <h3 class="orange-text">Эффект ИКЕА</h3>
+              <h3>Эффект ИКЕА</h3>
               <p>
                 Вы переоцениваете собственные решения, и, как следствие,
                 недооцениваете решения других.
@@ -107,7 +104,7 @@
             </a>
             <a href="#distortion-of-novelty" class="card">
               <h2>3</h2>
-              <h3 class="orange-text">Искажение новизны</h3>
+              <h3>Искажение новизны</h3>
               <p>
                 Вы даёте более высокую оценку тем событиям, которые произошли
                 недавно, и недооцениваете более старые.
@@ -115,7 +112,7 @@
             </a>
             <a href="#hyperbolic-depreciationv" class="card">
               <h2>4</h2>
-              <h3 class="orange-text">Гиперболическое обесценивание</h3>
+              <h3>Гиперболическое обесценивание</h3>
               <p>
                 Вы гонитесь за немедленной маленькой выгодой и игнорируете более
                 крупную, недоступную сейчас, но доступную в будущем.
@@ -123,7 +120,7 @@
             </a>
             <a href="#errors-in-planning" class="card">
               <h2>5</h2>
-              <h3 class="orange-text">Ошибка планирования</h3>
+              <h3>Ошибка планирования</h3>
               <p>
                 Неправильно рассчитывать время необходимое для завершения
                 задачи.
@@ -138,7 +135,7 @@
           <div class="section-flex">
             <img
               class="section-image-right"
-              src="../src/images/1.png"
+              src="./images/1.png"
               alt="section-image"
             />
             <div class="section-upper">
@@ -187,7 +184,7 @@
             </div>
             <img
               class="section-image-right"
-              src="../src/images/2.png"
+              src="./images/2.png"
               alt="section-image"
             />
           </div>
@@ -216,7 +213,7 @@
           <div class="section-flex">
             <img
               class="section-image-right"
-              src="../src/images/3.png"
+              src="./images/3.png"
               alt="section-image"
             />
             <div class="section-upper">
@@ -250,7 +247,7 @@
       </section>
 
       <section
-        id="hyperbolic-depreciationv"
+        id="hyperbolic-depreciation"
         class="section section-inverse background-pattern"
       >
         <div class="container">
@@ -265,7 +262,7 @@
             </div>
             <img
               class="section-image-right"
-              src="../src/images/4.png"
+              src="./images/4.png"
               alt="section-image"
             />
           </div>
@@ -296,7 +293,7 @@
           <div class="section-flex">
             <img
               class="section-image-right"
-              src="../src/images/5.png"
+              src="./images/5.png"
               alt="section-image"
             />
             <div class="section-upper">
@@ -328,9 +325,37 @@
         </div>
       </section>
     </main>
-    
-    <footer>
 
+    <footer class="main-footer">
+      <div class="container">
+        <div class="form-info">
+          <h3>
+            Хотите узнать больше?<br />
+            Подпишитесь на обновления
+          </h3>
+          <form>
+            <label for="email">Электронная почта</label>
+            <div class="email-field">
+              <input
+                id="email"
+                type="text"
+                placeholder="Ваша электронная почта"
+              />
+              <button class="footer-btn"></button>
+            </div>
+            <p>Подписываясь, вы принимаете <a href="#">правила сервиса</a></p>
+          </form>
+        </div>
+        <div class="contact-information">
+          <p>© 2020 Константин Константинопольский</p>
+          <p>
+            По материалам статьи<a href="#">
+              Yash Ranadive Cognitive Biases in Programming</a
+            >
+          </p>
+          <a href="">Курсы программирования Hexlet</a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
